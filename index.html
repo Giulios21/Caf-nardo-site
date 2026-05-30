@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAF CGN SPA DEI PROFESSIONISTI - Nardò</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#f4f6fb;
+color:#111;
+}
+
+header{
+background:linear-gradient(135deg,#0b2a5b,#1e4fa3);
+color:white;
+padding:70px 20px;
+text-align:center;
+}
+
+header h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+header p{
+max-width:700px;
+margin:auto;
+opacity:0.9;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.whatsapp{
+background:#25D366;
+color:white;
+}
+
+.call{
+background:white;
+color:#0b2a5b;
+}
+
+section{
+max-width:1000px;
+margin:auto;
+padding:40px 20px;
+}
+
+h2{
+text-align:center;
+color:#0b2a5b;
+margin-bottom:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:10px;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:center;
+font-weight:bold;
+}
+
+.box{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+footer{
+background:#0b2a5b;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+.float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* CHAT */
+.chat-btn{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#0b2a5b;
+color:white;
+padding:12px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.chat{
+position:fixed;
+bottom:150px;
+right:20px;
+width:300px;
+height:350px;
+background:white;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+display:none;
+flex-direction:column;
+}
+
+.chat-header{
+background:#0b2a5b;
+color:white;
+padding:10px;
+font-weight:bold;
+}
+
+.chat-body{
+flex:1;
+padding:10px;
+overflow:auto;
+font-size:14px;
+}
+
+.chat-input{
+display:flex;
+border-top:1px solid #ddd;
+}
+
+.chat-input input{
+flex:1;
+padding:10px;
+border:none;
+outline:none;
+}
+
+.chat-input button{
+background:#25D366;
+border:none;
+color:white;
+padding:10px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>CAF CGN SPA DEI PROFESSIONISTI</h1>
+<p>Assistenza fiscale e previdenziale a Nardò. Servizi rapidi, professionali e su misura.</p>
+
+<a class="btn whatsapp" href="https://wa.me/393279720096">WhatsApp</a>
+<a class="btn call" href="tel:3279720096">Chiama Ora</a>
+</header>
+
+<section>
+<h2>I Nostri Servizi Fiscali</h2>
+<div class="grid">
+<div class="card">730</div>
+<div class="card">Redditi PF</div>
+<div class="card">ISEE</div>
+<div class="card">Contratti Locazione</div>
+<div class="card">SPID</div>
+<div class="card">Successioni</div>
+<div class="card">Visure Catastali</div>
+<div class="card">Colf e Badanti</div>
+</div>
+</section>
+
+<section>
+<h2>Servizi Previdenziali</h2>
+<div class="grid">
+<div class="card">Pensioni</div>
+<div class="card">NASpI</div>
+<div class="card">Invalidità</div>
+<div class="card">Maternità</div>
+<div class="card">Assegni Familiari</div>
+</div>
+</section>
+
+<section>
+<h2>Perché scegliere noi</h2>
+<div class="grid">
+<div class="card">Professionalità</div>
+<div class="card">Rapidità</div>
+<div class="card">Supporto Personalizzato</div>
+</div>
+</section>
+
+<section>
+<h2>Lascia una Recensione</h2>
+<div class="box">
+I clienti potranno lasciare la loro recensione tramite modulo dedicato o Google in futuro.
+</div>
+</section>
+
+<section>
+<h2>Dove Siamo</h2>
+<div class="box">
+📍 Nardò (LE) – Via Principi di Savoia
+<iframe
+width="100%"
+height="250"
+style="margin-top:15px;border:0;border-radius:10px;"
+src="https://www.google.com/maps?q=Nardò&output=embed">
+</iframe>
+</div>
+</section>
+
+<section>
+<h2>Contatti</h2>
+<div class="box">
+📞 3290395915<br>
+📞 3279720096<br>
+</div>
+</section>
+
+<footer>
+© CAF CGN SPA DEI PROFESSIONISTI - Nardò
+</footer>
+
+<a class="float" href="https://wa.me/393279720096">WhatsApp</a>
+
+<!-- CHAT -->
+<div class="chat-btn" onclick="toggleChat()">Chat</div>
+
+<div class="chat" id="chat">
+<div class="chat-header">Assistente CAF</div>
+<div class="chat-body" id="chatBody">
+<p><b>AI:</b> Ciao! Come posso aiutarti?</p>
+</div>
+
+<div class="chat-input">
+<input id="msg" placeholder="Scrivi...">
+<button onclick="send()">Invia</button>
+</div>
+</div>
+
+<script>
+function toggleChat(){
+let c=document.getElementById("chat");
+c.style.display = (c.style.display==="flex") ? "none" : "flex";
+}
+
+function send(){
+let input=document.getElementById("msg");
+let body=document.getElementById("chatBody");
+
+if(!input.value) return;
+
+body.innerHTML += "<p><b>Tu:</b> "+input.value+"</p>";
+
+let text=input.value.toLowerCase();
+let reply="Per informazioni dettagliate contattaci su WhatsApp.";
+
+if(text.includes("isee")) reply="Per ISEE servono redditi e nucleo familiare.";
+if(text.includes("730")) reply="Per il 730 servono CU e documenti fiscali.";
+if(text.includes("spid")) reply="Lo SPID si attiva con documento valido.";
+
+setTimeout(()=>{
+body.innerHTML += "<p><b>CAF:</b> "+reply+"</p>";
+body.scrollTop=body.scrollHeight;
+},500);
+
+input.value="";
+}
+</script>
+
+</body>
+</html>
